@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useLanguage } from "../context/LanguageContext";
 import { BookOpen, Home, User, Moon, Sun, ExternalLink, Globe } from "lucide-react";
 
 export default function Header() {
-  const [language, setLanguage] = useState<"en" | "zh">("en");
+  const { language, toggleLanguage, t } = useLanguage();
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -14,10 +15,6 @@ export default function Header() {
       document.documentElement.classList.add('dark');
     }
   }, []);
-
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "zh" : "en"));
-  };
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -72,7 +69,7 @@ export default function Header() {
             className="flex items-center gap-1 px-3 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium hover:from-blue-600 hover:to-purple-600 transition-all"
           >
             <Globe size={16} />
-            {language === "en" ? "EN" : "中文"}
+            {language === "en" ? "中文" : "EN"}
           </button>
 
           {/* Dark Mode Toggle */}
