@@ -38,7 +38,7 @@ export default function TestTimeScalingPost() {
       <p>
         {t(
           "In recent years, Large Language Models have made significant progress on various tasks. However, a key question remains: How can we make models 'think' more thoroughly during inference?",
-          "近年来，大语言模型在各类任务上取得了显著进展。然而，一个关键问题始终存在：如何让模型在推理时"思考"得更充分？"
+          "近年来，大语言模型在各类任务上取得了显著进展。然而，一个关键问题始终存在：如何让模型在推理时「思考」得更充分？"
         )}
       </p>
       <p>
