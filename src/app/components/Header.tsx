@@ -2,11 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useLanguage } from "../context/LanguageContext";
 import { BookOpen, Home, User, Moon, Sun, ExternalLink, Globe } from "lucide-react";
 
 export default function Header() {
-  const { language, toggleLanguage, t } = useLanguage();
+  const [language, setLanguage] = useState<"en" | "zh">("en");
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -15,6 +14,10 @@ export default function Header() {
       document.documentElement.classList.add('dark');
     }
   }, []);
+
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "en" ? "zh" : "en"));
+  };
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -41,7 +44,7 @@ export default function Header() {
             className="flex items-center gap-1 px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-blue-50 dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800 transition-colors"
           >
             <Home size={18} />
-            <span className="hidden sm:inline">{t("Home", "首页")}</span>
+            <span className="hidden sm:inline">Home</span>
           </Link>
           
           <Link 
@@ -49,7 +52,7 @@ export default function Header() {
             className="flex items-center gap-1 px-3 py-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-blue-50 dark:text-slate-400 dark:hover:text-blue-400 dark:hover:bg-slate-800 transition-colors"
           >
             <User size={18} />
-            <span className="hidden sm:inline">{t("About", "关于")}</span>
+            <span className="hidden sm:inline">About</span>
           </Link>
 
           {/* Portfolio Link */}
@@ -60,7 +63,7 @@ export default function Header() {
             className="flex items-center gap-1 px-3 py-2 rounded-lg text-slate-600 hover:text-purple-600 hover:bg-purple-50 dark:text-slate-400 dark:hover:text-purple-400 dark:hover:bg-slate-800 transition-colors"
           >
             <ExternalLink size={18} />
-            <span className="hidden sm:inline">{t("Portfolio", "主页")}</span>
+            <span className="hidden sm:inline">Portfolio</span>
           </a>
 
           {/* Language Toggle */}
@@ -69,7 +72,7 @@ export default function Header() {
             className="flex items-center gap-1 px-3 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium hover:from-blue-600 hover:to-purple-600 transition-all"
           >
             <Globe size={16} />
-            {language === "en" ? "中文" : "EN"}
+            {language === "en" ? "EN" : "中文"}
           </button>
 
           {/* Dark Mode Toggle */}

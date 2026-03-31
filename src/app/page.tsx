@@ -349,7 +349,7 @@ export default function Home() {
       {/* Tags Filter */}
       <section className="flex flex-wrap justify-center gap-2">
         <span className="tag px-4 py-2 rounded-full text-sm font-medium text-blue-700 dark:text-blue-300 cursor-pointer">
-          {t("All", "全部")}
+          All
         </span>
         <span className="tag px-4 py-2 rounded-full text-sm font-medium text-slate-600 dark:text-slate-400 cursor-pointer">
           AI
@@ -358,13 +358,13 @@ export default function Home() {
           LLM
         </span>
         <span className="tag px-4 py-2 rounded-full text-sm font-medium text-slate-600 dark:text-slate-400 cursor-pointer">
-          {t("Inference", "推理优化")}
+          Inference
         </span>
         <span className="tag px-4 py-2 rounded-full text-sm font-medium text-slate-600 dark:text-slate-400 cursor-pointer">
-          {t("Paper Review", "论文解读")}
+          Paper Review
         </span>
         <span className="tag px-4 py-2 rounded-full text-sm font-medium text-slate-600 dark:text-slate-400 cursor-pointer">
-          {t("Essay", "随笔")}
+          Essay
         </span>
       </section>
 
@@ -372,7 +372,7 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
           <span className="w-1 h-8 rounded-full bg-gradient-to-b from-blue-500 to-purple-500"></span>
-          {t("Latest Posts", "最新文章")}
+          Latest Posts
         </h2>
         
         <div className="space-y-6">
@@ -419,7 +419,7 @@ export default function Home() {
                   href={`/posts/${post.slug}`}
                   className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium text-sm transition-colors"
                 >
-                  {t("Read more", "阅读更多")}
+                  Read more
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -431,21 +431,18 @@ export default function Home() {
       {/* Newsletter / Subscribe Section */}
       <section className="gradient-border">
         <div className="p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">{t("Subscribe", "订阅更新")}</h2>
+          <h2 className="text-2xl font-bold mb-4">Subscribe</h2>
           <p className="text-slate-600 dark:text-slate-400 mb-6">
-            {t(
-              "Get notified when new articles are published",
-              "有新文章发布时，第一时间通知你"
-            )}
+            Get notified when new articles are published
           </p>
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input
               type="email"
-              placeholder={t("Enter your email", "输入你的邮箱")}
+              placeholder="Enter your email"
               className="flex-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium hover:from-blue-600 hover:to-purple-600 transition-all">
-              {t("Subscribe", "订阅")}
+              Subscribe
             </button>
           </div>
         </div>
