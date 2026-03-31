@@ -1,7 +1,11 @@
-import Link from "next/link";
+"use client";
+
+import { useLanguage } from "../context/LanguageContext";
 import { BookOpen, ExternalLink, Mail, MapPin } from "lucide-react";
 
 export default function AboutPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="space-y-12">
       {/* Profile Section */}
@@ -11,7 +15,7 @@ export default function AboutPage() {
             JZ
           </div>
         </div>
-        <h1 className="text-3xl font-bold mb-2 gradient-text">关于我</h1>
+        <h1 className="text-3xl font-bold mb-2 gradient-text">{t("About Me", "关于我")}</h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 mb-4">
           Jie Zhu | Software & ML Engineer @ Amazon
         </p>
@@ -30,25 +34,31 @@ export default function AboutPage() {
       {/* Bio */}
       <section className="gradient-border">
         <div className="p-8">
-          <h2 className="text-xl font-bold mb-4">简介</h2>
+          <h2 className="text-xl font-bold mb-4">{t("Bio", "简介")}</h2>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
-            我是 Amazon 的软件工程师（机器学习方向），目前就职于 Amazon AGI Customization Service 团队，
-            专注于大语言模型（LLM）的训练技术和推理优化。
+            {t(
+              "I am a Software Development Engineer (ML) at Amazon, currently working in the Amazon AGI Customization Service team, focusing on Large Language Model (LLM) training techniques and inference optimization.",
+              "我是 Amazon 的软件工程师（机器学习方向），目前就职于 Amazon AGI Customization Service 团队，专注于大语言模型（LLM）的训练技术和推理优化。"
+            )}
           </p>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
-            在此之前，我曾在 Amazon People Experience Technology 团队开发全球最大的 HCM 系统，
-            以及在 Alexa Audio Voice Experience Growth 团队构建语音 AI 基础设施。
+            {t(
+              "Previously, I worked at Amazon People Experience Technology team developing the world's largest HCM system, and at Alexa Audio Voice Experience Growth team building voice AI infrastructure.",
+              "在此之前，我曾在 Amazon People Experience Technology 团队开发全球最大的 HCM 系统，以及在 Alexa Audio Voice Experience Growth 团队构建语音 AI 基础设施。"
+            )}
           </p>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-            我拥有 Virginia Tech 的计算机工程硕士学位（机器学习方向）和华中科技大学的微电子硕士学位。
-            我的研究兴趣包括大语言模型、推理部署优化、测试时优化（Test-Time Optimization）等。
+            {t(
+              "I hold an M.Eng. in Computer Engineering (Machine Learning) from Virginia Tech and an M.S. in Microelectronics from Huazhong University of Science and Technology. My research interests include Large Language Models, Inference Deployment Optimization, and Test-Time Optimization.",
+              "我拥有 Virginia Tech 的计算机工程硕士学位（机器学习方向）和华中科技大学的微电子硕士学位。我的研究兴趣包括大语言模型、推理部署优化、测试时优化（Test-Time Optimization）等。"
+            )}
           </p>
         </div>
       </section>
 
       {/* Links */}
       <section>
-        <h2 className="text-xl font-bold mb-6">链接</h2>
+        <h2 className="text-xl font-bold mb-6">{t("Links", "链接")}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a 
             href="https://jiezhu-portfolio.vercel.app"
@@ -60,8 +70,8 @@ export default function AboutPage() {
               <ExternalLink size={24} />
             </div>
             <div>
-              <h3 className="font-semibold text-slate-900 dark:text-white">个人主页</h3>
-              <p className="text-sm text-slate-500">查看我的完整简历和项目</p>
+              <h3 className="font-semibold text-slate-900 dark:text-white">{t("Portfolio", "个人主页")}</h3>
+              <p className="text-sm text-slate-500">{t("View my full resume and projects", "查看我的完整简历和项目")}</p>
             </div>
           </a>
 
@@ -76,7 +86,7 @@ export default function AboutPage() {
             </div>
             <div>
               <h3 className="font-semibold text-slate-900 dark:text-white">GitHub</h3>
-              <p className="text-sm text-slate-500">查看我的开源项目</p>
+              <p className="text-sm text-slate-500">{t("Check out my open source projects", "查看我的开源项目")}</p>
             </div>
           </a>
 
@@ -91,7 +101,7 @@ export default function AboutPage() {
             </div>
             <div>
               <h3 className="font-semibold text-slate-900 dark:text-white">LinkedIn</h3>
-              <p className="text-sm text-slate-500">职业社交网络</p>
+              <p className="text-sm text-slate-500">{t("Professional network", "职业社交网络")}</p>
             </div>
           </a>
 
@@ -106,7 +116,7 @@ export default function AboutPage() {
             </div>
             <div>
               <h3 className="font-semibold text-slate-900 dark:text-white">Google Scholar</h3>
-              <p className="text-sm text-slate-500">查看我的学术论文</p>
+              <p className="text-sm text-slate-500">{t("View my academic publications", "查看我的学术论文")}</p>
             </div>
           </a>
         </div>
@@ -114,9 +124,15 @@ export default function AboutPage() {
 
       {/* Research Interests */}
       <section>
-        <h2 className="text-xl font-bold mb-6">研究方向</h2>
+        <h2 className="text-xl font-bold mb-6">{t("Research Interests", "研究方向")}</h2>
         <div className="flex flex-wrap gap-3">
-          {["Large Language Models", "Inference Optimization", "Test-Time Optimization", "Machine Learning Systems", "Generative AI"].map((topic) => (
+          {[
+            t("Large Language Models", "大语言模型"),
+            t("Inference Optimization", "推理优化"),
+            t("Test-Time Optimization", "测试时优化"),
+            t("ML Systems", "机器学习系统"),
+            t("Generative AI", "生成式AI")
+          ].map((topic) => (
             <span 
               key={topic}
               className="tag px-4 py-2 rounded-full text-sm font-medium text-blue-700 dark:text-blue-300"
@@ -129,16 +145,16 @@ export default function AboutPage() {
 
       {/* Contact */}
       <section className="text-center py-8">
-        <h2 className="text-xl font-bold mb-4">联系我</h2>
+        <h2 className="text-xl font-bold mb-4">{t("Contact Me", "联系我")}</h2>
         <p className="text-slate-600 dark:text-slate-400 mb-6">
-          欢迎通过邮件或社交媒体与我交流
+          {t("Feel free to reach out via email or social media", "欢迎通过邮件或社交媒体与我交流")}
         </p>
         <a 
           href="mailto:jiezwork@gmail.com"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium hover:from-blue-600 hover:to-purple-600 transition-all"
         >
           <Mail size={20} />
-          发送邮件
+          {t("Send Email", "发送邮件")}
         </a>
       </section>
     </div>
