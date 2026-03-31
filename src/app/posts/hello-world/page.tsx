@@ -8,7 +8,7 @@ export default function HelloWorldPost() {
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Hello World - 欢迎来到我的博客</h1>
         <div className="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-500">
-          <span>2026-03-30</span>
+          <span>2025-03-28</span>
           <span>•</span>
           <span>2 min read</span>
         </div>
@@ -71,7 +71,7 @@ export default function HelloWorldPost() {
       <hr />
       
       <p className="text-sm text-slate-500">
-        本文作者：Jie Zhu | 发布于 2026-03-30
+        本文作者：Jie Zhu | 发布于 2025-03-28
       </p>
     </article>
   );
