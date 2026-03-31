@@ -1,3 +1,6 @@
+"use client";
+
+import { useLanguage } from "../../context/LanguageContext";
 export default function Post() {
   return (
     <article className="prose dark:prose-invert max-w-none">
