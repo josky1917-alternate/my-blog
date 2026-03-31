@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"prose dark:prose-invert max-w-none","children":[["$","h1",null,{"children":"Hello World"}],["$","time",null,{"className":"text-gray-500","children":"2026-03-30"}],["$","p",null,{"children":"欢迎来到我的博客！这是我的第一篇文章。"}],["$","h2",null,{"children":"关于这个博客"}],["$","p",null,{"children":["这个博客使用 ",["$","strong",null,{"children":"Next.js"}]," 和 ",["$","strong",null,{"children":"Tailwind CSS"}]," 构建， 部署在 Vercel 上。我会在这里分享技术文章、生活感悟和各种有趣的东西。"]}],["$","h2",null,{"children":"技术栈"}],["$","ul",null,{"children":[["$","li",null,{"children":"Next.js 15 - React 框架"}],["$","li",null,{"children":"Tailwind CSS - 样式"}],["$","li",null,{"children":"TypeScript - 类型安全"}],["$","li",null,{"children":"Vercel - 部署托管"}]]}],["$","p",null,{"children":"感谢你的访问，期待与你交流！"}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BmWXzwcN9OACYV6Nx5ZyF"}
+4:null

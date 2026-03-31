@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./components/Header";
 
 export const metadata: Metadata = {
-  title: "我的博客",
-  description: "记录生活与技术",
+  title: "Jie Zhu's Blog",
+  description: "分享AI、机器学习、软件工程技术与思考",
 };
 
 export default function RootLayout({
@@ -12,29 +13,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN">
-      <body className="antialiased min-h-screen bg-white dark:bg-gray-900">
-        <header className="border-b border-gray-200 dark:border-gray-800">
-          <nav className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-              我的博客
-            </a>
-            <div className="space-x-4">
-              <a href="/" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                首页
-              </a>
-              <a href="/about" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                关于
-              </a>
-            </div>
-          </nav>
-        </header>
+    <html lang="zh-CN" className="scroll-smooth">
+      <body className="antialiased min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-indigo-950">
+        <Header />
         <main className="max-w-4xl mx-auto px-4 py-8">
           {children}
         </main>
-        <footer className="border-t border-gray-200 dark:border-gray-800 mt-auto">
-          <div className="max-w-4xl mx-auto px-4 py-6 text-center text-gray-600 dark:text-gray-400 text-sm">
-            © 2026 我的博客. All rights reserved.
+        <footer className="border-t border-slate-200 dark:border-slate-700 mt-auto">
+          <div className="max-w-4xl mx-auto px-4 py-6 text-center text-slate-600 dark:text-slate-400 text-sm">
+            <p>© 2026 Jie Zhu's Blog. All rights reserved.</p>
+            <p className="mt-2">
+              Built with Next.js & Tailwind CSS
+            </p>
           </div>
         </footer>
       </body>
