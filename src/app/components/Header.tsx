@@ -54,7 +54,7 @@ export default function Header() {
 
           {/* Portfolio Link */}
           <a 
-            href="https://jiezhu-portfolio.vercel.app"
+            href="https://portfolio.jiezstudio.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 px-3 py-2 rounded-lg text-slate-600 hover:text-purple-600 hover:bg-purple-50 dark:text-slate-400 dark:hover:text-purple-400 dark:hover:bg-slate-800 transition-colors"

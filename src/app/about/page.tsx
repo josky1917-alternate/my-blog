@@ -61,7 +61,7 @@ export default function AboutPage() {
         <h2 className="text-xl font-bold mb-6">{t("Links", "链接")}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <a 
-            href="https://jiezhu-portfolio.vercel.app"
+            href="https://portfolio.jiezstudio.com"
             target="_blank"
             rel="noopener noreferrer"
             className="card-hover flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700"
