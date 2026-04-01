@@ -17,6 +17,16 @@ interface Post {
 
 const posts: Post[] = [
   {
+    slug: "claude-code-source-leak-2026",
+    title: "Claude Code Source Code Leak: Anatomy of a $2.5 Billion Mistake",
+    titleZh: "Claude Code 源代码泄露：一场价值25亿美元的错误解剖",
+    date: "2026-03-31",
+    excerpt: "On March 31, 2026, Anthropic's Claude Code suffered a catastrophic source code leak. Approximately 512,000 lines of TypeScript code were exposed. This article examines the incident's timeline, technical details, and far-reaching implications.",
+    excerptZh: "2026年3月31日，Anthropic的Claude Code遭遇了灾难性的源代码泄露。约51.2万行TypeScript代码被暴露。本文深入剖析这一事件的时间线、技术细节以及深远影响。",
+    tags: ["Breaking News", "Security", "Anthropic"],
+    readTime: "15 min",
+  },
+  {
     slug: "ai-agent-2026-trends",
     title: "AI Agent 2026: From Tools to Colleagues",
     titleZh: "AI Agent 2026：从工具到同事的进化",
