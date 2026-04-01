@@ -88,16 +88,16 @@ export default function Post() {
       <h3>{t("Anthropic's Official Statement", "Anthropic的官方声明")}</h3>
       <p>
         {t(
-          "Anthropic quickly acknowledged the incident, attributing it to "human error in a release packaging issue" rather than a security breach. The company emphasized that no sensitive customer data or credentials were exposed. However, they acknowledged that the source code itself was legitimate and complete.",
-          "Anthropic迅速承认了这起事件，将其归因于"发布打包过程中的人为错误"，而非安全漏洞。公司强调没有敏感的客户数据或凭证被暴露。然而，他们承认源代码本身是合法且完整的。"
+          "Anthropic quickly acknowledged the incident, attributing it to 'human error in a release packaging issue' rather than a security breach. The company emphasized that no sensitive customer data or credentials were exposed. However, they acknowledged that the source code itself was legitimate and complete.",
+          "Anthropic迅速承认了这起事件，将其归因于'发布打包过程中的人为错误'，而非安全漏洞。公司强调没有敏感的客户数据或凭证被暴露。然而，他们承认源代码本身是合法且完整的。"
         )}
       </p>
 
       <h3>{t("DMCA Takedowns: A Losing Battle", "DMCA下架：一场必败的战斗")}</h3>
       <p>
         {t(
-          "Anthropic attempted to contain the damage by issuing DMCA takedown notices against GitHub repositories that had mirrored the leaked code. However, this proved to be a futile effort. The code had already been forked thousands of times, distributed across multiple platforms, and even translated into "clean-room rewrites" in other programming languages. Once source code enters the wild, it becomes effectively impossible to contain.",
-          "Anthropic试图通过向镜像泄露代码的GitHub仓库发出DMCA下架通知来控制损害。然而，这被证明是徒劳的努力。代码已经被分叉数千次，分布在多个平台上，甚至被翻译成其他编程语言的"清洁室重写"。一旦源代码进入公开领域，就几乎不可能控制。"
+          "Anthropic attempted to contain the damage by issuing DMCA takedown notices against GitHub repositories that had mirrored the leaked code. However, this proved to be a futile effort. The code had already been forked thousands of times, distributed across multiple platforms, and even translated into 'clean-room rewrites' in other programming languages. Once source code enters the wild, it becomes effectively impossible to contain.",
+          "Anthropic试图通过向镜像泄露代码的GitHub仓库发出DMCA下架通知来控制损害。然而，这被证明是徒劳的努力。代码已经被分叉数千次，分布在多个平台上，甚至被翻译成其他编程语言的'清洁室重写'。一旦源代码进入公开领域，就几乎不可能控制。"
         )}
       </p>
 
