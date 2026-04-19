@@ -212,7 +212,7 @@ export default function PostPage() {
 
         <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-4 my-6">
           <h4 className="font-bold text-yellow-900 dark:text-yellow-300 mb-2">
-            {t("The "Shrinkflation" Theory", "\"缩水\"理论")}
+            {t("The Shrinkflation Theory", "缩水理论")}
           </h4>
           <p className="text-yellow-800 dark:text-yellow-200 text-sm">
             {t(
