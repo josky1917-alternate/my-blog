@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import { Calendar, Clock, Tag, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 

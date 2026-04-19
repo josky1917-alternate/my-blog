@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import { Calendar, Clock, Tag, ArrowLeft, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 
@@ -138,13 +138,13 @@ export default function PostPage() {
         </p>
 
         <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-6 mb-3">
-          3. {t("Instruction Ignoring and \"Laziness\"", "指令忽略和"懒惰"")}
+          3. {t("Instruction Ignoring and Laziness", "指令忽略和懒惰")}
         </h3>
 
         <p className="leading-relaxed mb-4">
           {t(
             "The \"adaptive reasoning\" feature, intended to allow the model to decide when to think longer, is perceived by many as a cost-cutting measure. Users observe that Opus 4.7 often defaults to lower effort, resulting in less thorough reasoning and poorer output quality compared to explicit instructions given to earlier versions.",
-            "\"自适应推理\"功能旨在允许模型决定何时思考更长时间，但被许多人视为削减成本的措施。用户观察到，与给予早期版本的明确指令相比，Opus 4.7通常默认为较低的努力，导致推理不够彻底和输出质量较差。"
+            "自适应推理功能旨在允许模型决定何时思考更长时间，但被许多人视为削减成本的措施。用户观察到，与给予早期版本的明确指令相比，Opus 4.7通常默认为较低的努力，导致推理不够彻底和输出质量较差。"
           )}
         </p>
 
