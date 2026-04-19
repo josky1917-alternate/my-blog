@@ -83,7 +83,7 @@ export default function PostPage() {
         <p className="leading-relaxed mb-4">
           {t(
             "Within days of release, Reddit threads and developer forums filled with complaints about Opus 4.7. Users described the model as \"dumber, lazier, and less reliable\" compared to its predecessor, Opus 4.6. The sentiment was so strong that some users rolled back to earlier versions or switched to competing models.",
-            "发布几天内，Reddit帖子和开发者论坛充满了对Opus 4.7的投诉。用户将该模型描述为与其前身Opus 4.6相比"更笨、更懒、更不可靠"。情绪如此强烈，以至于一些用户回滚到早期版本或转向竞争模型。"
+            "发布几天内，Reddit帖子和开发者论坛充满了对Opus 4.7的投诉。用户将该模型描述为与其前身Opus 4.6相比更笨、更懒、更不可靠。情绪如此强烈，以至于一些用户回滚到早期版本或转向竞争模型。"
           )}
         </p>
 
@@ -91,7 +91,7 @@ export default function PostPage() {
           <blockquote className="text-lg italic text-slate-700 dark:text-slate-300 border-l-4 border-slate-400 pl-4">
             {t(
               "\"Opus 4.7 feels like a downgrade. It ignores instructions I gave it a week ago, makes up packages that don't exist, and confidently hallucinates web searches. This is not the Claude I rely on for critical work.\"",
-              "\"Opus 4.7感觉像是降级。它忽略了我一周前给它的指令，编造不存在的包，并自信地幻觉网络搜索。这不是我依赖进行关键工作的Claude。\""
+              "Opus 4.7感觉像是降级。它忽略了我一周前给它的指令，编造不存在的包，并自信地幻觉网络搜索。这不是我依赖进行关键工作的Claude。"
             )}
           </blockquote>
           <p className="text-sm text-slate-600 dark:text-slate-400 mt-2 text-right">

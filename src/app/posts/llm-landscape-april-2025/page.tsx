@@ -134,7 +134,7 @@ export default function PostPage() {
         <p className="leading-relaxed mb-4">
           {t(
             "Gemini Code Assist gained new \"agentic\" capabilities, allowing it to undertake complex programming tasks and assist developers in Android Studio. This positions Google as a serious contender in the AI-assisted development space.",
-            "Gemini Code Assist获得了新的"代理式"能力，可以承担复杂的编程任务并在Android Studio中协助开发者。这使Google成为AI辅助开发领域的有力竞争者。"
+            "Gemini Code Assist获得了新的代理式能力，可以承担复杂的编程任务并在Android Studio中协助开发者。这使Google成为AI辅助开发领域的有力竞争者。"
           )}
         </p>
 
