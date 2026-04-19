@@ -17,6 +17,26 @@ interface Post {
 
 const posts: Post[] = [
   {
+    slug: "claude-opus-47-issues",
+    title: "Claude Opus 4.7: A Serious Performance Regression?",
+    titleZh: "Claude Opus 4.7：严重的性能倒退？",
+    date: "2025-04-19",
+    excerpt: "Claude Opus 4.7, released by Anthropic on April 16, 2025, has been met with widespread user complaints about performance degradation, hallucinations, and increased costs. This article analyzes the reported issues and their implications for AI reliability.",
+    excerptZh: "Anthropic于2025年4月16日发布的Claude Opus 4.7遭遇了广泛的用户投诉，涉及性能退化、幻觉和成本增加。本文分析了报告的问题及其对AI可靠性的影响。",
+    tags: ["Anthropic", "Claude", "Performance Issues"],
+    readTime: "10 min",
+  },
+  {
+    slug: "llm-landscape-april-2025",
+    title: "LLM Landscape in April 2025: GPT-4o Takes Over, Meta Releases Llama 4",
+    titleZh: "2025年4月LLM动态：GPT-4o全面接管，Meta发布Llama 4",
+    date: "2025-04-10",
+    excerpt: "April 2025 marks a pivotal month in the large language model industry. OpenAI begins phasing out GPT-4 in favor of GPT-4o, Meta launches the highly anticipated Llama 4 family, and Google pushes forward with Gemini 2.5.",
+    excerptZh: "2025年4月是大语言模型行业的关键月份。OpenAI开始逐步淘汰GPT-4，转而采用GPT-4o；Meta发布了备受期待的Llama 4系列；Google则推进了Gemini 2.5的发展。",
+    tags: ["LLM", "OpenAI", "Meta", "Google", "Industry News"],
+    readTime: "8 min",
+  },
+  {
     slug: "claude-code-source-leak-2026",
     title: "Claude Code Source Code Leak: Anatomy of a $2.5 Billion Mistake",
     titleZh: "Claude Code 源代码泄露：一场价值25亿美元的错误解剖",
