@@ -166,7 +166,7 @@ export default function PostPage() {
 
         <p className="leading-relaxed mb-4">
           {t(
-            "GPTQ is a layer-wise quantization method that uses approximate second-order information to quantize weights. It's a mature technique that has been widely adopted in the LLM community for its balance of speed and accuracy.",
+            "GPTQ is a layer-wise quantization method that uses approximate second-order information to quantize weights. It is a mature technique that has been widely adopted in the LLM community for its balance of speed and accuracy.",
             "GPTQ是一种逐层量化方法，使用近似二阶信息来量化权重。这是一种成熟的技术，因其在速度和准确性之间的平衡而在LLM社区中被广泛采用。"
           )}
         </p>
@@ -176,11 +176,11 @@ export default function PostPage() {
             {t("GPTQ in VLLM", "VLLM中的GPTQ")}
           </h4>
           <ul className="list-disc list-inside space-y-1 text-green-800 dark:text-green-200 text-sm">
-            <li>{t("Officially merged into VLLM with GPTQModel support", "通过GPTQModel支持正式合并到VLLM")</li>
+            <li>{t("Officially merged into VLLM with GPTQModel support", "通过GPTQModel支持正式合并到VLLM")}</li>
             <li>{t("Supports 4-bit and 8-bit quantization", "支持4位和8位量化")}</li>
             <li>{t("Dynamic per-module quantization for fine-tuned optimization", "动态逐模块量化以进行精细优化")}</li>
             <li>{t("Leverages Marlin and Machete kernels for peak performance", "利用Marlin和Machete内核实现峰值性能")}</li>
-            <li>{t("Optimized for NVIDIA Ampere (A100+) and Hopper (H100+) GPUs", "针对NVIDIA Ampere（A100+）和Hopper（H100+）GPU优化")}</li>
+            <li>{t("Optimized for NVIDIA Ampere A100+ and Hopper H100+ GPUs", "针对NVIDIA Ampere A100+和Hopper H100+ GPU优化")}</li>
           </ul>
         </div>
 
