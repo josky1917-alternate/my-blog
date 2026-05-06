@@ -17,6 +17,16 @@ interface Post {
 
 const posts: Post[] = [
   {
+    slug: "vllm-quantization-deep-dive",
+    title: "Deep Dive into VLLM Quantization: GGUF, AWQ, GPTQ and Beyond",
+    titleZh: "深入解析VLLM量化技术：GGUF、AWQ、GPTQ及未来趋势",
+    date: "2025-05-05",
+    excerpt: "A comprehensive technical analysis of quantization methods in VLLM, including GGUF, AWQ, GPTQ, and emerging FP8 quantization. Learn how to optimize LLM inference for production deployment.",
+    excerptZh: "全面分析VLLM中的量化方法，包括GGUF、AWQ、GPTQ以及新兴的FP8量化技术。学习如何为生产部署优化LLM推理。",
+    tags: ["VLLM", "Quantization", "Inference Optimization", "LLM Deployment"],
+    readTime: "12 min",
+  },
+  {
     slug: "claude-opus-47-issues",
     title: "Claude Opus 4.7: A Serious Performance Regression?",
     titleZh: "Claude Opus 4.7：严重的性能倒退？",
