@@ -17,6 +17,16 @@ interface Post {
 
 const posts: Post[] = [
   {
+    slug: "multimodal-document-intelligence",
+    title: "Multimodal Document Intelligence: Preprocessing and Inference Optimization Strategies",
+    titleZh: "多模态文档智能：预处理与推理优化策略",
+    date: "2026-05-21",
+    excerpt: "A deep dive into how Vision-Language Models process documents, covering preprocessing pipelines, vision token compression, quantization strategies, and production deployment optimization for multimodal AI systems.",
+    excerptZh: "深入探讨视觉语言模型如何处理文档，涵盖预处理流程、视觉token压缩、量化策略以及多模态AI系统的生产部署优化。",
+    tags: ["Multimodal AI", "Vision-Language Models", "Document Processing", "Inference Optimization"],
+    readTime: "15 min",
+  },
+  {
     slug: "vllm-quantization-deep-dive",
     title: "Deep Dive into VLLM Quantization: GGUF, AWQ, GPTQ and Beyond",
     titleZh: "深入解析VLLM量化技术：GGUF、AWQ、GPTQ及未来趋势",
