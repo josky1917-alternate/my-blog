@@ -17,6 +17,16 @@ interface Post {
 
 const posts: Post[] = [
   {
+    slug: "ml-model-evaluation-guide",
+    title: "ML Model Evaluation and Experiment Design: A Comprehensive Guide",
+    titleZh: "机器学习模型评估与实验设计：全面指南",
+    date: "2026-06-06",
+    excerpt: "A comprehensive guide covering bias-variance tradeoff, overfitting, regularization techniques (L1/L2, Dropout), A/B testing, statistical significance, and offline vs online evaluation for ML practitioners.",
+    excerptZh: "全面指南，涵盖偏差-方差权衡、过拟合、正则化技术（L1/L2、Dropout）、A/B测试、统计显著性以及离线评估与在线评估，适合ML从业者。",
+    tags: ["Machine Learning", "Model Evaluation", "A/B Testing", "Statistics", "Experiment Design"],
+    readTime: "18 min",
+  },
+  {
     slug: "multimodal-document-intelligence",
     title: "Multimodal Document Intelligence: Preprocessing and Inference Optimization Strategies",
     titleZh: "多模态文档智能：预处理与推理优化策略",
