@@ -299,8 +299,8 @@ export default function PostPage() {
 
         <p className="leading-relaxed mb-4">
           {t(
-            "Dropout is a regularization technique specifically designed for neural networks. During training, random neurons are "dropped out" (set to zero) with probability p, forcing the network to learn redundant representations.",
-            "Dropout是专门为神经网络设计的正则化技术。在训练期间，随机神经元以概率p被"丢弃"（设置为零），迫使网络学习冗余表示。"
+            "Dropout is a regularization technique specifically designed for neural networks. During training, random neurons are dropped out (set to zero) with probability p, forcing the network to learn redundant representations.",
+            "Dropout是专门为神经网络设计的正则化技术。在训练期间，随机神经元以概率p被丢弃（设置为零），迫使网络学习冗余表示。"
           )}
         </p>
 
