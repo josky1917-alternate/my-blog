@@ -350,7 +350,7 @@ export default function PostPage() {
           </h4>
           <ol className="list-decimal list-inside space-y-2 text-blue-800 dark:text-blue-200 text-sm">
             <li>
-              <strong>{t("Define Hypothesis", "定义假设")}:</strong> {t("Clearly state what you expect to change (e.g., "Model B will increase click-through rate by 5%")", "清楚地陈述你期望改变什么（例如"模型B将点击率提高5%"）")}
+              <strong>{t("Define Hypothesis", "定义假设")}:</strong> {t("Clearly state what you expect to change (e.g., Model B will increase click-through rate by 5%)", "清楚地陈述你期望改变什么（例如模型B将点击率提高5%）")}
             </li>
             <li>
               <strong>{t("Select Metrics", "选择指标")}:</strong> {t("Choose primary (decision-making) and secondary (monitoring) metrics", "选择主要（决策）和次要（监控）指标")}
