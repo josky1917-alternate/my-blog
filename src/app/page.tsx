@@ -17,6 +17,16 @@ interface Post {
 
 const posts: Post[] = [
   {
+    slug: "attention-is-all-you-need",
+    title: "Attention Is All You Need: A Deep Dive into the Transformer Architecture",
+    titleZh: "Attention Is All You Need：深入理解Transformer架构",
+    date: "2026-06-12",
+    excerpt: "A comprehensive explanation of the Transformer architecture with mathematical intuition and complete code implementation. Covers Query, Key, Value, Self-Attention mechanism with PyTorch code.",
+    excerptZh: "全面解释Transformer架构，包含数学直觉和完整代码实现。涵盖Query、Key、Value、自注意力机制及PyTorch代码实现。",
+    tags: ["Transformer", "Attention Mechanism", "Deep Learning", "NLP", "PyTorch"],
+    readTime: "20 min",
+  },
+  {
     slug: "ml-model-evaluation-guide",
     title: "ML Model Evaluation and Experiment Design: A Comprehensive Guide",
     titleZh: "机器学习模型评估与实验设计：全面指南",
