@@ -380,6 +380,7 @@ Key Features:
             <p className="text-sm text-slate-600 dark:text-slate-400">
               {t("Minimizes fragmentation, improves memory reuse. Different allocation/eviction algorithms for various KV cache architectures.", 
               "最小化碎片化，提高内存重用。针对各种KV缓存架构采用不同的分配/驱逐算法。")}
+            </p>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded">
             <h4 className="font-semibold text-slate-900 dark:text-white mb-2">{t("Enhanced Speculative Decoding", "增强推测解码")}</h4>

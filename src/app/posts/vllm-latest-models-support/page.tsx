@@ -220,8 +220,8 @@ This pattern:
 
         <p className="leading-relaxed mb-4">
           {t(
-            "Meta's Llama 4 release in April 2025 marked a significant milestone for open-source AI. VLLM provided "Day 0" support, enabling immediate inference of Llama 4 models including Scout and Maverick variants.",
-            "Meta于2025年4月发布的Llama 4标志着开源AI的重要里程碑。VLLM提供了"首日"支持，实现了Llama 4模型（包括Scout和Maverick变体）的即时推理。"
+            "Meta's Llama 4 release in April 2025 marked a significant milestone for open-source AI. VLLM provided Day 0 support, enabling immediate inference of Llama 4 models including Scout and Maverick variants.",
+            "Meta于2025年4月发布的Llama 4标志着开源AI的重要里程碑。VLLM提供了首日支持，实现了Llama 4模型（包括Scout和Maverick变体）的即时推理。"
           )}
         </p>
 
