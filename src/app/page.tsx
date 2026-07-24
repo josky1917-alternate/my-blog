@@ -17,6 +17,26 @@ interface Post {
 
 const posts: Post[] = [
   {
+    slug: "vllm-latest-models-support",
+    title: "VLLM and the Latest Models: DeepSeek V4, Llama 4, and Beyond",
+    titleZh: "VLLM与最新模型：DeepSeek V4、Llama 4及更多",
+    date: "2026-06-24",
+    excerpt: "Explore how VLLM supports cutting-edge models including DeepSeek V4 Pro with hybrid attention, Llama 4 with MoE architecture, and the technical innovations enabling these integrations.",
+    excerptZh: "探索VLLM如何支持尖端模型，包括具有混合注意力的DeepSeek V4 Pro、具有MoE架构的Llama 4，以及支持这些集成的技术创新。",
+    tags: ["VLLM", "DeepSeek V4", "Llama 4", "MoE", "Model Serving"],
+    readTime: "12 min",
+  },
+  {
+    slug: "vllm-architecture-deep-dive",
+    title: "VLLM Architecture Deep Dive: From V0 to V1 and Beyond",
+    titleZh: "VLLM架构深度解析：从V0到V1及未来",
+    date: "2026-06-18",
+    excerpt: "Deep dive into VLLM's core architectural principles, the revolutionary V1 rewrite with async-first design, and the roadmap toward Model Runner V2 (MRV2).",
+    excerptZh: "深入探讨VLLM的核心架构原则、具有异步优先设计的革命性V1重写，以及通往Model Runner V2 (MRV2)的路线图。",
+    tags: ["VLLM", "Architecture", "PagedAttention", "GPU Optimization"],
+    readTime: "15 min",
+  },
+  {
     slug: "attention-is-all-you-need",
     title: "Attention Is All You Need: A Deep Dive into the Transformer Architecture",
     titleZh: "Attention Is All You Need：深入理解Transformer架构",
