@@ -28,6 +28,23 @@ export default function ResearchArticle({ post }: { post: ResearchPost }) {
             <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-8">
               {section.paragraphs.map((paragraph, i) => <p key={i}>{t(paragraph.en, paragraph.zh)}</p>)}
             </div>
+            {section.table && (
+              <div className="mt-6 overflow-x-auto rounded-lg border border-slate-200 dark:border-slate-700">
+                <table className="w-full min-w-[640px] text-sm text-left leading-6">
+                  <caption className="sr-only">{t(section.heading.en, section.heading.zh)}</caption>
+                  <thead className="bg-slate-100 dark:bg-slate-800">
+                    <tr>{section.table.headers.map((header, i) => <th key={i} scope="col" className="px-4 py-3 font-semibold">{t(header.en, header.zh)}</th>)}</tr>
+                  </thead>
+                  <tbody>{section.table.rows.map((row, i) => (
+                    <tr key={i} className="border-t border-slate-200 dark:border-slate-700">
+                      {row.map((cell, j) => j === 0
+                        ? <th key={j} scope="row" className="px-4 py-3 align-top font-medium">{t(cell.en, cell.zh)}</th>
+                        : <td key={j} className="px-4 py-3 align-top text-slate-700 dark:text-slate-300">{t(cell.en, cell.zh)}</td>)}
+                    </tr>
+                  ))}</tbody>
+                </table>
+              </div>
+            )}
             {section.sources && <p className="mt-3 text-sm text-blue-600 dark:text-blue-400">
               {t("Sources: ", "来源：")}{section.sources.map(id => <a key={id} href={`#source-${id}`} className="mr-3 underline">[{id}]</a>)}
             </p>}

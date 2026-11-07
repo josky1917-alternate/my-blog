@@ -8,7 +8,12 @@ export interface ResearchPost {
   excerptZh: string;
   tags: string[];
   readTime: string;
-  sections: { heading: Bilingual; paragraphs: Bilingual[]; sources?: number[] }[];
+  sections: {
+    heading: Bilingual;
+    paragraphs: Bilingual[];
+    table?: { headers: Bilingual[]; rows: Bilingual[][] };
+    sources?: number[];
+  }[];
   sources: { title: string; url: string; date: string }[];
 }
 
