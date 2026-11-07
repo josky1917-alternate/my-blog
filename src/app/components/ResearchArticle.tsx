@@ -88,12 +88,19 @@ export default function ResearchArticle({ post }: { post: ResearchPost }) {
             <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-8">
               {section.paragraphs.map((paragraph, i) => <p key={i}>{t(paragraph.en, paragraph.zh)}</p>)}
             </div>
+            {section.code?.map((example, i) => <figure key={i} className="my-6 overflow-hidden rounded-xl border border-slate-700 bg-slate-900">
+              <div className="flex items-center justify-between gap-4 border-b border-slate-700 px-5 py-3 text-sm text-slate-200">
+                <span className="font-medium">{t(example.title.en, example.title.zh)}</span><span className="text-xs text-slate-400">{example.language}</span>
+              </div>
+              <pre className="overflow-x-auto p-5 text-xs leading-6 text-slate-100 sm:text-sm"><code>{example.value}</code></pre>
+              <figcaption className="border-t border-slate-700 px-5 py-3 text-xs leading-6 text-slate-300">{t(example.caption.en, example.caption.zh)}</figcaption>
+            </figure>)}
             {visuals && index === visuals.figure.afterSection && <Figure figure={visuals.figure} />}
             {visuals && index === post.sections.length - 2 && <ReadingCards visuals={visuals} />}
             {section.table && (
               <div className="mt-6 overflow-x-auto rounded-lg border border-slate-200 dark:border-slate-700">
                 <table className="w-full min-w-[640px] text-sm text-left leading-6">
-                  <caption className="caption-bottom border-t border-slate-200 bg-slate-50 px-4 py-3 text-left text-xs leading-6 text-slate-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">{t("Table 1. Platform characteristics at a glance. This is a qualitative comparison, not a performance ranking.", "表1：平台特征对照。这是定性比较，不是实测性能排名。")}</caption>
+                  <caption className="caption-bottom border-t border-slate-200 bg-slate-50 px-4 py-3 text-left text-xs leading-6 text-slate-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">{t(section.table.caption?.en ?? "Table 1. Platform characteristics at a glance. This is a qualitative comparison, not a performance ranking.", section.table.caption?.zh ?? "表1：平台特征对照。这是定性比较，不是实测性能排名。")}</caption>
                   <thead className="bg-slate-100 dark:bg-slate-800">
                     <tr>{section.table.headers.map((header, i) => <th key={i} scope="col" className="px-4 py-3 font-semibold">{t(header.en, header.zh)}</th>)}</tr>
                   </thead>

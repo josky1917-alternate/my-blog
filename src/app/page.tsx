@@ -5,6 +5,7 @@ import { useLanguage } from "./context/LanguageContext";
 import { Calendar, Clock, Tag, ArrowRight } from "lucide-react";
 import { summerPosts } from "./posts/_data/summer-2026";
 import { awsAiChipsPost } from "./posts/_data/aws-ai-chips";
+import { vllmNeuronPost } from "./posts/_data/vllm-neuron-deployment";
 
 interface Post {
   slug: string;
@@ -18,6 +19,7 @@ interface Post {
 }
 
 const posts: Post[] = [
+  vllmNeuronPost,
   awsAiChipsPost,
   ...[...summerPosts].sort((a, b) => b.date.localeCompare(a.date)),
   {

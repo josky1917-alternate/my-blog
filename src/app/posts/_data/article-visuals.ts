@@ -20,6 +20,17 @@ const b = (en: string, zh: string): Bilingual => ({ en, zh });
 const step = (en: string, zh: string, detailEn: string, detailZh: string): Step => ({ title: b(en, zh), detail: b(detailEn, detailZh) });
 
 export const articleVisuals: Record<string, ArticleVisuals> = {
+  "deploy-vllm-inferentia-trainium-vs-gpu": {
+    scene: b("Moving an inference service is like moving a restaurant. The menu can stay the same, but the ovens, sockets, and preparation routine change. vLLM's API is the menu; CUDA and Neuron are different kitchens. First get one dish right, then invite the dinner crowd.", "迁移推理服务，有点像给餐厅换厨房：菜单可以不变，烤箱、电源插口和备菜流程却变了。vLLM的API像菜单，CUDA和Neuron则是不同的厨房。先确认一道菜能做好，再接晚高峰的客人。"),
+    takeaway: b("Match the hardware, SDK, plugin, and model first; compile, verify, then scale.", "先匹配硬件、SDK、插件与模型，再编译、验证，最后扩容。"),
+    figure: {
+      kind: "flow", afterSection: 0,
+      title: b("From an instance to a serving endpoint", "从一台实例到推理服务"),
+      steps: [step("Choose a route", "选择路线", "Inf2 + NxD, or Trn2/3 + standalone plugin", "Inf2 + NxD，或Trn2/3 + 独立插件"), step("Match the stack", "匹配环境", "Driver, SDK, plugin, model revision", "驱动、SDK、插件、模型版本"), step("Compile & warm", "编译与预热", "Watch logs and preserve matching artifacts", "查看日志并保留匹配产物"), step("Verify & measure", "验证与测量", "Health → short request → realistic traffic", "健康检查→短请求→真实流量")],
+      caption: b("A deployment workflow, not a benchmark. The two Neuron routes need different software combinations; a shared HTTP API does not make their configuration or compiled artifacts interchangeable.", "部署流程示意，不是性能测试。两条Neuron路线需要不同软件组合；HTTP接口相似，不代表配置或编译产物可以互换。"), sources: [1, 3, 4]
+    },
+    cards: [step("First: correctness", "先跑对", "A small supported model and a short request.", "一个受支持的小模型、一条短请求。"), step("Then: capacity", "再扩容", "Tune context, concurrency, and traffic separately.", "分开调整上下文、并发和流量。"), step("Finally: the bill", "最后算账", "Compare equal quality and service levels.", "在同等质量与服务水平下比较。")]
+  },
   "hy3-open-agent-deployment": {
     scene: b("Think of an MoE as a workshop with many specialists. A particular job calls only some of them to the bench, but the others still need somewhere to keep their tools. That is why 'active parameters' and the memory bill tell different stories.", "想象一家有许多老师傅的工坊：接到一件活，只需要几位师傅上手，但其他人的工具和工作台并不会凭空消失。MoE的“激活参数”和显存账单，说的正是两件不同的事。"),
     takeaway: b("A small active slice can reduce computation without making the full model small to store.", "每次参与计算的部分可以很小，整套模型的存储负担却未必小。"),

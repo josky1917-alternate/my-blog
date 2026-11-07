@@ -11,7 +11,8 @@ export interface ResearchPost {
   sections: {
     heading: Bilingual;
     paragraphs: Bilingual[];
-    table?: { headers: Bilingual[]; rows: Bilingual[][] };
+    table?: { headers: Bilingual[]; rows: Bilingual[][]; caption?: Bilingual };
+    code?: { title: Bilingual; language: string; value: string; caption: Bilingual }[];
     sources?: number[];
   }[];
   sources: { title: string; url: string; date: string }[];
